@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  var HP,ATK,DEF,SPCATK,SPCDEF,SPD,result;
+
+
+  function setValues(){
+    HP = Number(document.getElementById("HP").value);
+    ATK = Number(document.getElementById("ATK").value);
+    DEF = Number(document.getElementById("DEF").value);
+    SPCATK = Number(document.getElementById("SPCATK").value);
+    SPCDEF = Number(document.getElementById("SPCDEF").value);
+    SPD = Number(document.getElementById("SPD").value);
+
+  }
+
+  function calculate(){
+    setValues();
+    result = ((HP + ATK + DEF + SPCATK + SPCDEF + SPD)/186)*100;
+    alert("The total IV percentage is  %" + result)
+
+  }
+
+
+  </script>
+
+
+
+
+
+
+
+</head>
+<body>
+  <div>
+  HP <input id="HP" type="text"/ size="2">
+  ATK <input id="ATK" type="text" size = "2"/>
+  DEF <input id="DEF" type="text" size ="2"/>
+  SPCATK<input id="SPCATK" type="text" size ="2"/>
+  SPDEF<input id="SPCDEF" type="text" size="2"/>
+  SPEED<input id="SPD" type="text" size ="2"/>
+
+  <input type="button" onclick="calculate()" value ="calculate"/>
+
+
+
+  </div>
+
+
+</body>
+</html>
